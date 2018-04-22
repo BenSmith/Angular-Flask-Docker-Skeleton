@@ -1,0 +1,23 @@
+<div *ngIf="winner==-1">
+  <h2>
+    Tie! <input [(ngModel)]="players[0].name" placeholder="name">'s hand {{players[0].hand}} is equal to <input [(ngModel)]="players[1].name" placeholder="name">'s hand {{players[1].hand}}
+  </h2>
+</div>
+
+<div *ngIf="winner==0">
+  <h2>
+    <input [(ngModel)]="players[0].name" placeholder="name"> wins with a {{players[0].hand}}!
+  </h2>
+  This beats <input [(ngModel)]="players[1].name" placeholder="name">'s {{players[1].hand}}.
+</div>
+
+<div *ngIf="winner==1">
+  <h2>
+    <input [(ngModel)]="players[1].name" placeholder="name"> wins with a {{players[1].hand}}!
+  </h2>
+  This beats <input [(ngModel)]="players[0].name" placeholder="name">'s {{players[0].hand}}.
+</div>
+<hr/>
+<div>
+<button (click)="getNewHand()">Deal New Hand</button>
+</div>
