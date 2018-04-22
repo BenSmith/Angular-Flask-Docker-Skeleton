@@ -8,7 +8,7 @@ cd client && npm install && ng build --prod && cd .. && docker-compose build && 
 
 At this point, you should be able to reach the project at your usual docker URL (usually http://localhost/)
 
-
+Python unit tests are in the server/main/poker/ directory.
 
 
 The front-end of this project is built atop (with much gratitude) https://github.com/mrsan22/Angular-Flask-Docker-Skeleton
