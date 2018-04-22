@@ -1,9 +1,3 @@
-[submodule "client/server/main/pokerg"]
-	path = client/server/main/pokerg
-	url = git@github.com:BenSmith/poker-challenge.git
-[submodule "server/main/pokerg"]
-	path = server/main/pokerg
-	url = git@github.com:BenSmith/poker-challenge.git
 [submodule "server/main/poker"]
 	path = server/main/poker
 	url = git@github.com:BenSmith/poker-challenge.git
